@@ -1,5 +1,10 @@
+import Nav from "./Nav";
+
 export default function Checkout(props) {
     return (
-        <p>This is the Checkout</p>
+        <div>
+            <Nav pages={props.pages} />
+            <p>This is the Checkout</p>
+        </div>
     );
 };

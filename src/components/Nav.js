@@ -7,7 +7,7 @@ export default function Nav(props) {
             <ul>
                 {pagesArray.map(page => 
                     <li key={page.toLowerCase()}>
-                        <Link to={`/${page.toLowerCase()}`}>{page}</Link>
+                        <Link to={`/${(page === "Home") ? "" : page.toLowerCase()}`}>{page}</Link>
                     </li>
                 )}
             </ul>

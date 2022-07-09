@@ -1,5 +1,10 @@
+import Nav from "./Nav";
+
 export default function Home(props) {
     return (
-        <p>This is Home</p>
+        <div>
+            <Nav pages={props.pages} />
+            <p>This is Home</p>
+        </div>
     );
 };
